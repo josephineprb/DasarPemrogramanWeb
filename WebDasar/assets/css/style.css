@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Shantell Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+  }
+
+blockquote::before,
+blockquote::after {
+   content: '"';
+   font-size: 24px;
+   font-style: italic;
+   font-weight: bold;
+}
+
+nav a:hover {
+    font-weight: bold;
+ }
+
+h2 {
+    color: #49592a;
+    font-size: 24px;
+    font-style: oblique;
+}
+
+.profile header {
+    text-align: center;
+ }
+
+.profile h3{
+    text-align: center;
+}
+
+footer {
+    padding: 22px;
+    color: #cdd0c0;
+    background-color: #6e8641;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+ }
+
+.featured-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+ }
+
+.image-h3 {
+    width: 90%;
+    max-height: 600px;
+    object-fit: cover;
+    justify-content: center;
+ }
+
+.profile-img{
+    width: 200px;
+ }
+
+.card-box{
+    box-shadow: #c3d4a5;
+    border-radius: 9px;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: #c3d4a5;
+    border-style: groove;
+ }
+
+main {
+    padding: 20px;
+    overflow: auto;
+ }
+
+.jumbotron {
+    font-size: 20px;
+    padding: 120px;
+    background-color:#c3d4a5;
+    text-align: center;
+    color:whitesmoke;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/34818847/thumb/1.jpg");
+ }
+ 
+.h1-p{
+    line-height: 1em;
+ }
+
+nav {
+    background-color:#6e8641;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+  }
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 20px;
+  }
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+  }
+
+#content {
+    float: left;
+    width: 75%;
+  }
+
+aside {
+    float: right;
+    padding-left: 20px;
+    width: 25%;
+  }
+
+
+.div {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 2;
+   
+    display: flex;
+    align-items: center; 
+}  
+
+div .landing {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+div .landing .landing-description {
+    flex: 1 1;
+  }
+   
+div .landing .landing-description .title{
+    font-size: 3.5rem;
+    margin-block: 1rem;
+  }
+   
+div .landing .landing-description p {
+    line-height: 1.7rem;
+    font-size: 3rem;
+  }
+
+div .landing .landing-image {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+div .landing .landing-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+}
+
+ul {
+    text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+    #landing
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+      align-self: stretch;
+    }
+  }
